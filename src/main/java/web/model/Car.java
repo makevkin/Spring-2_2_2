@@ -3,15 +3,15 @@ package web.model;
 public class Car {
     private String model;
     private int dataRelease;
-    private int prise;
+    private int price;
 
     public Car() {
     }
 
-    public Car(String model, int dataRelease, int prise) {
+    public Car(String model, int dataRelease, int price) {
         this.model = model;
         this.dataRelease = dataRelease;
-        this.prise = prise;
+        this.price = price;
     }
 
     public String getModel() {
@@ -30,12 +30,12 @@ public class Car {
         this.dataRelease = dataRelease;
     }
 
-    public int getPrise() {
-        return prise;
+    public int getPrice() {
+        return price;
     }
 
-    public void setPrise(int prise) {
-        this.prise = prise;
+    public void setPrice(int price) {
+        this.price = price;
     }
 
     @Override
@@ -43,7 +43,7 @@ public class Car {
         return "Car{" +
                 "model='" + model + '\'' +
                 ", dataRelease=" + dataRelease +
-                ", prise=" + prise +
+                ", prise=" + price +
                 '}';
     }
 }
